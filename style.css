@@ -1,0 +1,149 @@
+/* Base Styles & Forest Palette */
+:root {
+    --primary-green: #2B4033;
+    --text-colour: #4A4A4A;
+    --bg-colour: #EAECEB;
+    /* Perfectly matched to your Google Form background */
+    --accent-line: #B5BDB6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-colour);
+    background-color: var(--bg-colour);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.centre-text {
+    text-align: center;
+}
+
+/* Header & Typography */
+.top-header {
+    text-align: center;
+    padding: 80px 20px 30px;
+}
+
+.names {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: var(--primary-green);
+}
+
+.subtitle-container {
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-colour);
+    margin-bottom: 5px;
+}
+
+.countdown {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-colour);
+    font-weight: 500;
+}
+
+/* Navigation Menu */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--accent-line);
+    border-bottom: 1px solid var(--accent-line);
+    padding: 15px 0;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-colour);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: var(--primary-green);
+}
+
+.main-nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-green);
+}
+
+/* Main Content Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Image */
+.image-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-photo {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+/* Sections */
+.wedding-section {
+    padding: 10px 0 60px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: var(--primary-green);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 40px auto 0;
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--primary-green);
+}
